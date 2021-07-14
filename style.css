@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    background-color: rgb(119, 212, 235);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 80vh;
+}
+.day{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+}
+.smile{
+    padding-left: 5px;
+}
+.coffee{
+    padding-bottom: 2px;
+}
+.input-task{
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    background-color: white;
+    width: 450px;
+    margin-top: 25px;
+}
+.input-task:hover{
+    box-shadow: 0 0 10px rgba(250,250,250,0.8);
+}
+.input-task:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.input--task:active{
+    border: none;
+}
+#input--task{
+    border: none;
+    width: 415px;
+    padding-left: 10px;
+    height: 35px;
+    outline: none;
+}
+button{
+    border: none;
+    background-color: white;
+}
+button:hover{
+    cursor: pointer;
+}
+.input-task img{
+    margin-top: 4px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background-color: #eeeeee;
+    font-size: 14px;
+    transition: 0.2s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ul li:nth-child(odd){
+    background-color: #b2bec3;
+}
+ul li:hover {
+    background-color: #ddd;
+}
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);	
+    height: 15px;
+    width: 7px;
+}
+.text{
+    margin-top: 30px;
+    font-size: 18px;
+    color: darkblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+span{
+    color: rgb(247, 101, 48);
+}
