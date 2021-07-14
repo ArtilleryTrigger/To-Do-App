@@ -24,10 +24,8 @@ Project aims to create find the number game (between 0 to 100).
 
 ## Expected Outcome
 
-![Project 002 Snapshot](project_002_1.gif)
-![Project 002 Snapshot](project_002_2.gif)
 ![Project 002 Snapshot](project_002_3.gif)
-![Project 002 Snapshot](project_002_4.gif)
+
 
 ## Objective
 
