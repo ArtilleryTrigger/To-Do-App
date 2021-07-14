@@ -55,6 +55,7 @@ html, body{
     padding-left: 10px;
     height: 35px;
     outline: none;
+    font-size: 18px;
 }
 button{
     border: none;
@@ -66,47 +67,7 @@ button:hover{
 .input-task img{
     margin-top: 4px;
 }
-ul{
-    margin: 0;
-    padding: 0;
-}
-ul li{
-    cursor: pointer;
-    position: relative;
-    padding: 12px 8px 12px 40px;
-    list-style-type: none;
-    background-color: #eeeeee;
-    font-size: 14px;
-    transition: 0.2s;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-ul li:nth-child(odd){
-    background-color: #b2bec3;
-}
-ul li:hover {
-    background-color: #ddd;
-}
-ul li.checked {
-    background: #888;
-    color: #fff;
-    text-decoration: line-through;
-}
-ul li.checked::before {
-    content: '';
-    position: absolute;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);	
-    height: 15px;
-    width: 7px;
-}
+
 .text{
     margin-top: 30px;
     font-size: 18px;
@@ -115,4 +76,36 @@ ul li.checked::before {
 }
 span{
     color: rgb(247, 101, 48);
+}
+.output-task{
+    margin: 0;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    background-color: white;
+    width: 450px;
+    margin-top: 5px;
+    height: 35px;
+    align-items: center;
+    padding-left: 10px;
+}
+#task{
+    margin-top: 30px;
+    position: relative;
+}
+.delete-task{
+    display: flex;
+}
+.delete-icon{
+    position: absolute;
+    float: right;
+    margin-left: 410px;
+    padding: 2px;
+    border-radius: 5px;
+}
+.delete-icon:hover{
+    background-color: red;
 }
