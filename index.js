@@ -10,10 +10,14 @@ btn.addEventListener("click",function(){
     inputTask.value = "";
     task.addEventListener("click", deleteItem);
     outputTask.addEventListener("click", function(){
-        outputTask.classList.toggle('checked');
-        outputTask.style.textDecoration = 'line-through';
-        outputTask.style.backgroundColor = 'green'
-    })
+        if (outputTask.style.textDecoration == 'line-through'){
+            outputTask.style.textDecoration = 'none';
+            outputTask.style.backgroundColor = 'white'
+        }else{
+            outputTask.style.textDecoration = 'line-through';
+            outputTask.style.backgroundColor = 'green'
+        }
+    });
 });
 
 function deleteItem(e){
